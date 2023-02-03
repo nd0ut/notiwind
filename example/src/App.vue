@@ -146,10 +146,8 @@
 </template>
 
 <script setup lang="ts">
-import { notify, Notification, NotificationGroup } from "./notiwind";
-
 function onClickTop() {
-  notify(
+  this.$notify(
     {
       group: "top",
       title: "Success",
